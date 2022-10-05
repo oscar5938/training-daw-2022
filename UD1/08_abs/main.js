@@ -1,7 +1,8 @@
 const assert = require('assert').strict;
 
 function abs(value) {
-
+   // console.log(Math.abs(value))
+return Math.abs(value);
 }
 
 assert.strictEqual(abs(4), 4)
