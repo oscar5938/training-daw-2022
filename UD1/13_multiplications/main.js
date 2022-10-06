@@ -1,5 +1,12 @@
 function printMultiplicationTables() {
-
+    let array = []
+    for (let x = 1; x < 11; x++) {
+        array=[]
+        for (let i = 1; i < 11; i++) {
+            array.push(i*x)
+        }
+        console.log(array)
+    }
 }
 
 printMultiplicationTables()

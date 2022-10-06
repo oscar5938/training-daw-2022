@@ -26,3 +26,17 @@ for(let i = 0; i<miArray.length; i++){
     console.log(miArray[i]);
 }
 array,includes('objeto')// ver si array tiene el objeto
+
+let Variable = 0
+switch(Variable){
+case 0:
+    text = "Off"
+    break;
+case 1:
+    text = "On"
+    break;
+default:
+    text = "no value found"
+    break;
+}
+console.log(text)
