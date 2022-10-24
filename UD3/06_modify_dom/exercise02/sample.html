@@ -4,12 +4,18 @@
 <title>DOM básico</title>
 <script type="text/javascript">
 window.onload = function() {
+	let a = document.getElementsByTagName('a')
 	// Numero de enlaces de la pagina
-
+	console.log(a.length)
 	// Direccion del penultimo enlace
-
+	console.log(a[a.length-2].href)
 	// Numero de enlaces que apuntan a http://prueba
-
+	let contador
+	for (let index = 0; index < a.length; index++) {
+	if(a[index].href === "http://prueba/"){
+		contador++
+	}}
+	console.log(contador)
 	// Numero de enlaces del tercer párrafo
 
 }
