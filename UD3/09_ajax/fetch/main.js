@@ -6,4 +6,5 @@ window.onload = function() {
         .then(response => {
             console.log(response)
         })
+
 }
