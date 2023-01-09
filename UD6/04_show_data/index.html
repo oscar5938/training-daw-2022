@@ -11,7 +11,7 @@
     Sample vuejs application
 
     <div id="app">
-      {{ message }}
+      {{ message }} <br> {{ Nombre }} <br> {{ Apellidos }} <br> {{ Puntuación }} <br> {{ Puesto }}
     </div>
   </main>
 
@@ -19,7 +19,11 @@
     let app = new Vue({
       el: '#app',
       data: {
-        message: 'Hello Vue!!'
+        message: 'Hello Vue!!',
+        Nombre: 'Oscar',
+        Apellidos: 'Ruiz Gil',
+        Puntuación: '84',
+        Puesto: '4'
       }
     })
   </script>
