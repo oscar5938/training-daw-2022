@@ -11,15 +11,17 @@
     Sample vuejs application
 
     <div id="app">
-      {{ message }}
+      {{ message }} <br>
+       <button v-on:click="message+=1">Counter</button>
     </div>
+   
   </main>
 
   <script>
     let app = new Vue({
       el: '#app',
       data: {
-        message: 'Hello Vue!!'
+        message: 0
       }
     })
   </script>
