@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    Nombre: <input @change="changeText" :value="nombre" />
+    Nombre: <input v-model="nombre">
     Apellido: <input v-model="surname" />
+    Consentimiento: <input type="checkbox" v-model="check">
+    <button v-bind:disabled="!check" @click="print(nombre, surname)"> Boton</button>
   </div>
 </template>
 
@@ -11,12 +13,13 @@ export default {
   data() {
     return {
       nombre: 'texto',
-      surname: 'value'
+      surname: 'value',
+      check: false
     }
   },
   methods: {
-    changeText(e) {
-      this.nombre = e.target.value
+    print(a, b) {
+      console.log(`${a} ${b}`)
     }
   }
 }

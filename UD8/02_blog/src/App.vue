@@ -2,24 +2,25 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <div id="content">
-      <Post
+      <PostComponent
         v-for="post in posts"
         :key="post.id"
+        :id="post.id"
         :title="post.title"
         :author="post.author"
         :content="post.content">
-      </Post>
+      </PostComponent>
     </div>
   </div>
 </template>
 
 <script>
-import Post from "./components/Post.vue"
+import PostComponent from "./components/PostComponent.vue"
 
 export default {
   name: 'App',
   components: {
-    Post
+    PostComponent
   },
   data() {
     return {
